@@ -1,9 +1,10 @@
 {
     "extends": "@onmoon/tsconfigs/node-module",
     "compilerOptions": {
+        "moduleResolution": "Node",
+        "module": "CommonJS",
         "outDir": ".build"
     },
-    "include": [
-        "src/**/*.ts"
-    ]
+    "exclude": ["src/examples"],
+    "include": ["src/**/*.ts"]
 }

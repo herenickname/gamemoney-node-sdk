@@ -1,4 +1,4 @@
-import gm from '../gm.js'
+import gm from '../gm'
 
 const response = await gm.getPayTypesStatistics()
 

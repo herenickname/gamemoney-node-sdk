@@ -1,9 +1,9 @@
-import gm from '../gm.js'
+import gm from '../gm'
 
 const response = await gm.getDaysBalanceStatistics({
-	currency: 'RUB',
-	start: '2010-01-01',
-	finish: '2022-02-01',
+    currency: 'RUB',
+    start: '2010-01-01',
+    finish: '2022-02-01'
 })
 
 console.log(response)

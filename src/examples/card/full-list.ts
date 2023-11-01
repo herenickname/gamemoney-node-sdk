@@ -1,7 +1,7 @@
-import gm from '../gm.js'
+import gm from '../gm'
 
 const response = await gm.getCardFullList({
-	user: '1',
+    user: '1'
 })
 
 console.log(response)

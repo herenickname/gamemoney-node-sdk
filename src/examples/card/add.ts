@@ -1,8 +1,8 @@
-import gm from '../gm.js'
+import gm from '../gm'
 
 const response = await gm.addCard({
-	user: '1',
-	redirect: 'https://project/return',
+    user: '1',
+    redirect: 'https://project/return'
 })
 
 console.log(response)
