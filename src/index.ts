@@ -527,6 +527,11 @@ export default class GameMoney {
         return this.request<GetCardSessionStatusResponse & GenericResponse>('invoice/cardsession/status', body)
     }
 
+    /** For more details and usage information see [docs](https://cp.gmpays.com/apidoc#checkout_check) */
+    public async checkCheckout(body: CreateCheckoutRequest) {
+        return this.request<GenericResponse>('checkout/check', body, SignType.RSA)
+    }
+
     /** For more details and usage information see [docs](https://cp.gmpays.com/apidoc#checkout_insert) */
     public async createCheckout(body: CreateCheckoutRequest) {
         return this.request<GenericResponse>('checkout/insert', body, SignType.RSA)
